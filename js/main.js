@@ -44,4 +44,13 @@ console.log(remaining);
 
 //Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
 
-const stringhe = ['pippo', 'PLUTO', 'Paperino'];
+const strings = ['pippo', 'PLUTO', 'Paperino'];
+
+const newStrings = [];
+
+for (const key in strings) {
+    newStrings.push(strings[key].charAt(0).toUpperCase() + strings[key].slice(1).toLowerCase());
+}
+console.log(newStrings);
+
+
