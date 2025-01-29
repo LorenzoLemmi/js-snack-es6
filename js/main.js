@@ -20,19 +20,28 @@ const cars = [
     {marca : "volkswagen", modello : "passat", alimentazione : "metano"}
 ];
 
-const benzina = [];
+const petrol = [];
 const diesel = [];
-const resto = [];
+const remaining = [];
 
 for (const key in cars) {
     if (cars[key].alimentazione === "benzina") {
-        benzina.push(cars[key]);
+        petrol.push(cars[key]);
     } else if (cars[key].alimentazione === "diesel") {
         diesel.push(cars[key]);
     } else {
-        resto.push(cars[key]);
+        remaining.push(cars[key]);
     }
 }
-console.log(benzina);
+console.log(petrol);
 console.log(diesel);
-console.log(resto);
+console.log(remaining);
+
+
+//Snack 2
+
+//A partire da un array di stringhe, crea un secondo array formattando le stringhe del primo array in minuscolo e con l'iniziale maiuscola.
+
+//Es: ['pippo', 'PLUTO', 'Paperino'] => ['Pippo', 'Pluto', 'Paperino']
+
+const stringhe = ['pippo', 'PLUTO', 'Paperino'];
