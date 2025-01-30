@@ -80,3 +80,32 @@ for (const key in animals) {
     }
 }
 console.log(mammals);
+
+
+//Snack 4
+
+//Crea un array di oggetti che rappresentano delle persone.
+//Ogni persona ha un nome, un cognome e un'età.
+ 
+//Partendo da questo, crea quindi un nuovo array inserendo, per ogni persona, una frase (stringa) con il nome e cognome e l'indicazione se può guidare, in base all'età.
+
+const people = [
+    {nome : "mario", cognome : "rossi", eta : 10},
+    {nome : "luigi", cognome : "verdi", eta : 15},
+    {nome : "elena", cognome : "bianchi", eta : 20},
+    {nome : "riccardo", cognome : "gialli", eta : 25},
+    {nome : "marco", cognome : "arancioni", eta : 30},
+    {nome : "francesco", cognome : "blu", eta : 35},
+    {nome : "giovanni", cognome : "turchese", eta : 40},
+];
+
+const canDrive = [];
+
+for (const key in people) {
+    if (people[key].eta >= 18) {
+        canDrive.push(people[key].nome + " " + people[key].cognome + " può guidare");
+    } else {
+        canDrive.push(people[key].nome + " " + people[key].cognome + " non può guidare");
+    }
+}
+console.log(canDrive);
